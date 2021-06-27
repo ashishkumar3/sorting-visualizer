@@ -1,0 +1,23 @@
+li {
+    list-style-type: none;
+}
+
+.header {
+    padding: 24px 36px;
+    font-size: 36px;
+
+    /*
+        Layout
+    */
+    display: flex;
+
+    /*
+        Colors
+    */
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.header li {
+    margin: 0 12px;
+}
