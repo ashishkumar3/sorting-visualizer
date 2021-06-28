@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Content.css';
 
 function Content(props: any) {
-    return (<div className="content">This is the content. This is where the sorting visualization will be displayed.</div>);
+    const [barCount, setBarCount] = useState(0);
+    return (<div className="content">
+        <div>{}</div>
+        {/* <input type="range" min="1" max="100" id="myRange"></input> */}
+        <button onClick={() => setBarCount(barCount + 1)}>+1</button>
+    </div>);
 }
 
 export default Content;
